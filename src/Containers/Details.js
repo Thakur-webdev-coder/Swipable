@@ -38,7 +38,7 @@ const Details = () => {
               ) : null}
             </View>
           </View>
-          <Text style={styles.txt2}>{item.mob}</Text>
+          <Text style={styles.txt22}>{item.mob}</Text>
         </View>
       </Swipeable>
     )
@@ -78,9 +78,9 @@ const styles = StyleSheet.create({
     fontSize: 19,
     color: 'gray',
   },
-  txt2: {
+  txt22: {
     color: '#000000',
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: '400',
   },
   bookarea: {
