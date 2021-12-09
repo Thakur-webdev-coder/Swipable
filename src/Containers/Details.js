@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { Data } from './Data'
 // import { SwipeListView } from 'react-native-swipe-list-view'
@@ -8,16 +8,19 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 import { Alert } from 'react-native'
 
 const Details = () => {
+  const [showicon, setshowicon] = useState('')
   const RenderRight = (progress, dragX) => {
     return (
       <View style={styles.bookarea}>
-        <Text style={styles.book}>Bookmark</Text>
+        <Text style={styles.book} onPress={() => setshowicon(!showicon)}>
+          Bookmark
+        </Text>
       </View>
     )
   }
   const RenderItem = ({ item, index }) => {
     const BookmarkItem = () => {
-      alert('Item will be Bookmarked')
+      // alert('Item will be Bookmarked')
     }
     return (
       <Swipeable
@@ -29,7 +32,11 @@ const Details = () => {
           <Text style={styles.txt}>{item.title}</Text>
           <View style={{ flexDirection: 'row' }}>
             <Text style={styles.txt1}>{item.detail}</Text>
-            <Ionicons name="bookmark" size={32} style={styles.icon} />
+            <View>
+              {showicon ? (
+                <Ionicons name="bookmark" size={33} style={styles.icon} />
+              ) : null}
+            </View>
           </View>
           <Text style={styles.txt2}>{item.mob}</Text>
         </View>
@@ -65,7 +72,7 @@ const styles = StyleSheet.create({
   txt: {
     fontSize: 32,
     color: '#000000',
-    fontWeight: '400',
+    fontWeight: '500',
   },
   txt1: {
     fontSize: 20,
@@ -81,7 +88,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'blue',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 5,
+    // marginTop: 1,
   },
   book: {
     color: '#fff',
@@ -89,5 +96,6 @@ const styles = StyleSheet.create({
   },
   icon: {
     color: '#8b1001',
+    paddingLeft: 12,
   },
 })

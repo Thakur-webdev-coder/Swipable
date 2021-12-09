@@ -43,16 +43,17 @@ const styles = StyleSheet.create({
   },
   txtinput: {
     backgroundColor: '#CBCED4',
-    paddingVertical: 6,
+    paddingVertical: 5,
     width: '90%',
-    fontSize: 23,
+    fontSize: 27,
+    paddingLeft: 1,
   },
   mainarea: {
     flexDirection: 'row',
   },
   icon: {
     marginTop: 13,
-    paddingHorizontal: 7,
+    paddingHorizontal: 9,
   },
   area: {
     backgroundColor: '#CBCED4',
@@ -69,8 +70,8 @@ const styles = StyleSheet.create({
   },
   btn: {
     backgroundColor: '#09C0EC',
-    marginTop: 13,
-    paddingVertical: 11,
+    marginTop: 11,
+    paddingVertical: 13,
     marginLeft: 20,
     marginRight: 20,
   },
