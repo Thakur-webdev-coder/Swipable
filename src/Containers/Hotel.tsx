@@ -43,9 +43,9 @@ const styles = StyleSheet.create({
   },
   txtinput: {
     backgroundColor: '#CBCED4',
-    paddingVertical: 5,
+    paddingVertical: 4,
     width: '90%',
-    fontSize: 27,
+    fontSize: 25,
     paddingLeft: 1,
   },
   mainarea: {

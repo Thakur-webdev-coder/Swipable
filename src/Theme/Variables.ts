@@ -24,6 +24,7 @@ export const Colors: ThemeColors = {
   primary: '#E14032',
   success: '#28a745',
   error: '#dc3545',
+  black: '000000',
 }
 
 export const NavigationColors: Partial<ThemeNavigationColors> = {
@@ -36,7 +37,9 @@ export const NavigationColors: Partial<ThemeNavigationColors> = {
 export const FontSize: ThemeFontSize = {
   small: 16,
   regular: 20,
+  regularex: 21,
   large: 40,
+  medium: 30,
 }
 
 /**

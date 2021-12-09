@@ -19,10 +19,19 @@ export default function ({ FontSize, Colors }: ThemeVariables): ThemeFonts {
       fontSize: FontSize.regular,
       color: Colors.text,
     },
+    textRegularEx: {
+      fontSize: FontSize.regularex,
+      color: Colors.text,
+    },
     textLarge: {
       fontSize: FontSize.large,
       color: Colors.text,
     },
+    textMedium: {
+      fontSize: FontSize.medium,
+      color: Colors.text,
+    },
+
     titleSmall: {
       fontSize: FontSize.small * 2,
       fontWeight: 'bold',

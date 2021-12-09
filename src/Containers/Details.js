@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { Data } from './Data'
-// import { SwipeListView } from 'react-native-swipe-list-view'
 import { FlatList } from 'react-native-gesture-handler'
 import { Swipeable } from 'react-native-gesture-handler'
 import Ionicons from 'react-native-vector-icons/Ionicons'
-import { Alert } from 'react-native'
+// import { useTheme } from '@/Hooks'
 
 const Details = () => {
+  // const { Common, Fonts, Gutters, Layout } = useTheme()
   const [showicon, setshowicon] = useState('')
   const RenderRight = (progress, dragX) => {
     return (
@@ -30,7 +30,7 @@ const Details = () => {
       >
         <View style={styles.field}>
           <Text style={styles.txt}>{item.title}</Text>
-          <View style={{ flexDirection: 'row' }}>
+          <View style={styles.field1}>
             <Text style={styles.txt1}>{item.detail}</Text>
             <View>
               {showicon ? (
@@ -72,16 +72,16 @@ const styles = StyleSheet.create({
   txt: {
     fontSize: 32,
     color: '#000000',
-    fontWeight: '500',
+    fontWeight: '400',
   },
   txt1: {
-    fontSize: 20,
+    fontSize: 19,
     color: 'gray',
   },
   txt2: {
     color: '#000000',
     fontSize: 18,
-    fontWeight: '500',
+    fontWeight: '400',
   },
   bookarea: {
     width: '25%',
@@ -96,6 +96,9 @@ const styles = StyleSheet.create({
   },
   icon: {
     color: '#8b1001',
-    paddingLeft: 12,
+    paddingLeft: 9,
+  },
+  field1: {
+    flexDirection: 'row',
   },
 })
