@@ -18,13 +18,13 @@ export default CustomHeader
 
 const styles = StyleSheet.create({
   conatiner: {
-    height: '18%',
     backgroundColor: 'white',
     flexDirection: 'row',
+    paddingVertical: 13,
   },
   txt1: {
     color: '#4A80FC',
-    fontSize: 23,
+    fontSize: 24,
   },
   main1: {
     justifyContent: 'center',
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     paddingTop: 25,
   },
   txt2: {
-    fontSize: 23,
+    fontSize: 24,
     color: 'black',
     fontWeight: 'bold',
   },
